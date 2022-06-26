@@ -3475,10 +3475,8 @@ var pokemons = [
 	},
 ];
 var list = document.querySelector(".list")
-var func = (arr) => {
-    
-    for (num of arr){
-        var newItem = document.createElement("li")
+pokemons.forEach((num) => {
+	var newItem = document.createElement("li")
         var numSpan = document.createElement("p")
         var nameP = document.createElement("p")
         var img = document.createElement("img")
@@ -3539,6 +3537,4 @@ var func = (arr) => {
 		weaSpan.style.paddingTop = "10px"
 		weaSpan.style.paddingBottom = "10px"
 		typSpan.style.marginTop = 0
-    }
-}
-console.log(func(pokemons));
+})
